@@ -47,7 +47,7 @@ namespace WheelModelApplication
                 var datas = model.Process(startT, endT, dt);
 
                 outputTextBox.Text = string.Join(Environment.NewLine, datas.Select(data => 
-                    $"T: {data.T:F2}. S: {data.S:F2}. Y0: {data.Y0:F2}. y0': {data.DeltaY0:F2}. y0'': {data.DeltaDeltaY0:F2}. N: {data.N:F2}"));
+                    $"T: {data.T:F2}. S: {data.S:F2}. Y0: {data.Y0:F2}. y0': {data.DeltaY0:F2}. y0'': {data.DeltaDeltaY0:F2}. N: {data.N:F2}. Y: {data.Y:F2}. Y': {data.DeltaY:F2}. Y'': {data.DeltaDeltaY:F2}"));
             }
             catch (Exception exception)
             {
